@@ -17,4 +17,30 @@ public class GuitarTest {
     public void canGetDescription(){
         assertEquals("Fender", guitar.getDescription());
     }
+
+    @Test
+    public void canGetBuyPrice() {
+        assertEquals(300, guitar.getBuyPrice(), 0.01);
+    }
+
+
+    @Test
+    public void canGetSellPrice(){
+        assertEquals(400, guitar.getSellPrice(), 0.01);
+    }
+
+    @Test
+    public void canGetType(){
+        assertEquals("Electric", guitar.getType());
+    }
+
+    @Test
+    public void canGetColour(){
+        assertEquals("Red", guitar.getColour());
+    }
+
+    @Test
+    public void canGetNumberOfStrings(){
+        assertEquals(6, guitar.getNumberOfStrings());
+    }
 }
