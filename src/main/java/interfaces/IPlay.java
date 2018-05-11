@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface iPlay {
+public interface IPlay {
 
     public String play(String sound);
 }

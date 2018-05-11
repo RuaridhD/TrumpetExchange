@@ -14,7 +14,7 @@ public class Guitar extends Instrument {
     }
 
 
-    public void setNumberOfStrings(int numberOfStrings) {
-        this.numberOfStrings = numberOfStrings;
+    public String play(){
+        return "Twing twang";
     }
 }

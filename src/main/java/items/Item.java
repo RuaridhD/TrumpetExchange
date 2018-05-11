@@ -1,6 +1,9 @@
 package items;
 
-public abstract class Item {
+import interfaces.IPlay;
+import interfaces.ISell;
+
+public abstract class Item implements ISell {
 
     String description;
     double buyPrice;
@@ -30,5 +33,11 @@ public abstract class Item {
 
     public void setSellPrice(double sellPrice) {
         this.sellPrice = sellPrice;
+    }
+
+    public double calculateMarkUp(){
+        double markUp;
+        markUp = sellPrice -= buyPrice;
+        return markUp;
     }
 }
