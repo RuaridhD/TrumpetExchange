@@ -36,8 +36,6 @@ public abstract class Item implements ISell {
     }
 
     public double calculateMarkUp(){
-        double markUp;
-        markUp = sellPrice -= buyPrice;
-        return markUp;
+        return sellPrice - buyPrice;
     }
 }

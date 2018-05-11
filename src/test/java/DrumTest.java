@@ -19,4 +19,9 @@ public class DrumTest {
         assertEquals(3, drums.getNumberOfPieces());
     }
 
+    @Test
+    public void canPlayInstrument(){
+        assertEquals("Bang crash ding", drums.play());
+    }
+
 }

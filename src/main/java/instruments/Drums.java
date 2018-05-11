@@ -12,4 +12,8 @@ public class Drums extends Instrument {
     public int getNumberOfPieces() {
         return numberOfPieces;
     }
+
+    public String play(){
+        return "Bang crash ding";
+    }
 }
