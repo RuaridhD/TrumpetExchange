@@ -25,5 +25,13 @@ public class Shop {
         return stock.size();
     }
 
+    public double calculateTotalProfit(){
+        double total = 0;
+        for (Item item : stock){
+           total += item.calculateMarkUp();
+        }
+        return total;
+    }
+
 
 }
